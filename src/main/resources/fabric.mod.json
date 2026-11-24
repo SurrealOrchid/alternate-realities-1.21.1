@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "alternate-realities",
+	"version": "${version}",
+	"name": "Alternate Realities",
+	"description": "A mod about exploring alternate realities of dimensions. (Only the overworld so far!)",
+	"authors": [
+		"SurrealOrchid"
+	],
+	"contact": {
+		"homepage": "https://surrealorchid.net",
+		"sources": "https://github.com/MC-Projects-By-SurrealOrchid/Alternate-Realities-1.21.1"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/alternate-realities/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.surrealorchid.ar.AlternateRealities"
+		],
+		"fabric-datagen": [
+			"net.surrealorchid.ar.AlternateRealitiesDataGenerator"
+		],
+		"client": [
+			"net.surrealorchid.ar.AlternateRealitiesClient"
+		]
+	},
+	"mixins": [
+		"alternate-realities.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
